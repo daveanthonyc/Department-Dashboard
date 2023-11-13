@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-function Dasboard() {
-    return ( <div>
-        <Typography>Dashboard</Typography>
-    </div> );
+function Dashboard() {
+    return ( <Box>
+        <Typography variant="h4" color={"primary.dark"}>This is the dashboard</Typography>
+    </Box> );
 }
 
-export default Dasboard;
+export default Dashboard;
