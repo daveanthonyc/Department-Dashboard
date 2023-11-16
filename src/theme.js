@@ -3,22 +3,22 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
     palette: {
         primary: {
-            main: "#8890b5",
-            dark: "#14256a",
-            light: "#fff"
+            main: "#FFF",
+            dark: "rgb(34, 51, 84)",
+            medium: "rgb(110, 117, 159)",
+            light: "rgb(146, 151, 183)",
         },
         secondary: {
-            main: "#4c6ef8", 
-            secondary: "#eaf4ff",
-            light: "#f8f9fa"
+            main: "rgb(190, 198, 255)", 
+            light: "rgb(242, 245, 249)",
         },
-        blueAccent: "rgb(80, 143, 244)",
+        purpleAccent: "#5569ff",
         yellowAccent: "rgb(255, 191, 67)",
-        greenAccent: "rgb(75, 230, 157)",
-        purpleAccent: "rgb(146, 103, 255)",
+        greenAccent: "rgb(87, 202, 34)",
+        redAccent: "rgb(255, 25, 67)"
     },
     typography: {
-        fontFamily: "Comfortaa, sans-serif",
+        fontFamily: 'inter, sans-serif', 
         fontSize: 12,
     }
 })

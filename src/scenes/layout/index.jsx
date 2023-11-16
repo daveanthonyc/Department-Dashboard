@@ -1,14 +1,13 @@
 import { Box } from "@mui/material";
-import { Outlet } from "react-router-dom";
 import Navbar from "../../components/Navbar";
+import { Outlet } from "react-router-dom";
+import Sidebar from "../../components/Sidebar";
 
 function Layout() {
-    return ( 
-    <Box 
-        bgcolor={"secondary.light"}
-        sx={{border: "2px solid red", width: "100%", height: "100%"}}>
-        <Navbar />
-        <Outlet />
+    return ( <Box >
+       <Navbar></Navbar> 
+       <Sidebar></Sidebar>
+       <Outlet />
     </Box> );
 }
 
