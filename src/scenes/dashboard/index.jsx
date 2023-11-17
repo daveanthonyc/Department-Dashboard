@@ -4,8 +4,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import OverviewChart from "../../components/OverviewChart";
 import RadialProgressBar from "../../components/RadialProgressBar";
 import { averageAttendance } from "../../components/chartData";
+import { useGetDataQuery } from "../../state/api";
 
 function Dashboard() {
+    const { data } = useGetDataQuery();
+    console.log(data)
     const date = new Date()
     const monthNames = [
         'January', 'February', 'March', 'April',

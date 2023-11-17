@@ -22,17 +22,17 @@ function Sidebar() {
         {
             icon: <LooksOneIcon sx={{width: "30px"}}/>,
             name: "GROUP ONE", 
-            id: "O1",
+            id: "o1",
         },
         {
             icon: <LooksTwoIcon sx={{width: "30px"}}/>,
             name: "GROUP TWO", 
-            id: "O2",
+            id: "o2",
         },
         {
             icon: <StarsIcon sx={{width: "30px"}}/>, 
             name: "HWPL", 
-            id: "HWPL",
+            id: "hwpl",
         },
     ]
     
@@ -45,7 +45,7 @@ function Sidebar() {
                 <Typography color="primary.light" sx={{fontWeight: "500", fontSize: "0.8rem"}}>GENERAL</Typography>
                 {
                     buttons.map((buttonData, index) => (
-                        <Box display="flex" gap={1} alignItems="center" color="primary.dark" key={index} paddingBlock={1} width={"100%"}>
+                        <Box display="flex" gap={1} alignItems="center" color="primary.dark" key={buttonData.id} paddingBlock={1} width={"100%"}>
                             <Button startIcon={buttonData.icon} sx={{color: "rgb(146, 151, 183)", '&:hover': {color: "#5569ff"}, justifyContent: "left"}} fullWidth onClick={() => navigate(`/${buttonData.id}`)}>
                                 <Typography variant="body1" component="span" color="primary.dark"><strong>{buttonData.name}</strong></Typography>
                             </Button>
